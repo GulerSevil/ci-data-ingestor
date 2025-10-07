@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2023",
+    "lib": ["ES2023"],
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "outDir": "dist",
+    "rootDir": "src",
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "exactOptionalPropertyTypes": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "types": ["node"]
+  },
+  // Tests are excluded from the main build to avoid TS6059 with rootDir: src
+  // Vitest will transpile tests; add a separate tsconfig for tests if needed
+  "include": ["src/**/*.ts"],
+  "exclude": ["dist", "node_modules"]
+}
+
+
+

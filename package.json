@@ -1,0 +1,42 @@
+{
+  "name": "ci-data-ingestor",
+  "version": "1.0.0",
+  "description": "Backend service that ingests CI/CD pipeline events via webhook and sends structured data to the data warehouse for analytics.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx src/server.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js",
+    "test": "vitest run",
+    "setup": "bash scripts/setup-local.sh",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "private": true,
+  "sideEffects": false,
+  "dependencies": {
+    "@fastify/cors": "^11.1.0",
+    "@fastify/helmet": "^13.0.1",
+    "@fastify/sensible": "^6.0.3",
+    "@fastify/formbody": "^8.0.0",
+    "dotenv": "^16.4.5",
+    "fastify": "^5.6.0",
+    "fastify-plugin": "^5.0.1",
+    "fastify-raw-body": "^5.0.0",
+    "zod": "^3.23.8",
+    "stripe": "^19.0.0",
+    "@elastic/elasticsearch": "^8.15.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.4",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.3"
+  }
+}
