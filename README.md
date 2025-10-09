@@ -1,3 +1,8 @@
+
+> **📘 This project is part of a three-part mini-series!**  
+> For more details and background, read **Part 1: [Observability in CI/CD]([https://your-medium-link.com](https://medium.com/p/1c9b3d7e717a#928e-80907836b0d6))** on Medium.
+
+
 ## CI Data Ingestor
 
 A lightweight webhook listener that ingests CI/CD pipeline events and publishes them to the data warehouse. It serves as the integration point between build and deployment systems and internal analytics pipelines.
